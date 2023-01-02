@@ -76,7 +76,7 @@ Python's arrays are dynamic, so its as simple as ~arr = []~.
 #+DOWNLOADED: file:/var/folders/09/vhzk9_lj38l4m_31zf_3zdfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_FDEfHW/Screen Shot 2023-01-02 at 12.36.26 PM.png @ 2023-01-02 12:36:29
 [[file:Data_Structures/2023-01-02_12-36-29_Screen Shot 2023-01-02 at 12.36.26 PM.png]]
 
-[[file:Data_Structures/single-linked-list.png][Singly linked list visual]]
+[[file:imgs/single-linked-list.png]]
 
 A double-linked list is where each node points to a ~previous~ and ~next~ ~Node~. A visual can be seen below:
 #+DOWNLOADED: file:/var/folders/09/vhzk9_lj38l4m_31zf_3zdfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_HWddgo/Screen Shot 2023-01-02 at 2.50.45 PM.png @ 2023-01-02 14:50:47
