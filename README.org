@@ -13,7 +13,7 @@
     - [[#strengths-1][Strengths]]
     - [[#weaknesses-1][Weaknesses]]
     - [[#uses][Uses:]]
-    - [[#code][Code]]
+    - [[#implementation-1][Implementation]]
   - [[#stacks][Stacks]]
   - [[#queues][Queues]]
   - [[#trees][Trees]]
@@ -76,6 +76,8 @@ Python's arrays are dynamic, so its as simple as ~arr = []~.
 #+DOWNLOADED: file:/var/folders/09/vhzk9_lj38l4m_31zf_3zdfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_FDEfHW/Screen Shot 2023-01-02 at 12.36.26 PM.png @ 2023-01-02 12:36:29
 [[file:Data_Structures/2023-01-02_12-36-29_Screen Shot 2023-01-02 at 12.36.26 PM.png]]
 
+[[file:Data_Structures/single-linked-list.png][Singly linked list visual]]
+
 A double-linked list is where each node points to a ~previous~ and ~next~ ~Node~. A visual can be seen below:
 #+DOWNLOADED: file:/var/folders/09/vhzk9_lj38l4m_31zf_3zdfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_HWddgo/Screen Shot 2023-01-02 at 2.50.45 PM.png @ 2023-01-02 14:50:47
 [[file:Data_Structures/2023-01-02_14-50-47_Screen Shot 2023-01-02 at 2.50.45 PM.png]]
@@ -94,7 +96,7 @@ When you should use a single linked list vs a double linked list:
 - The costly lookups make linked lists /not/ [[https://www.interviewcake.com/article/data-structures-coding-interview#ram][cache-friendly]] 
 *** Uses:
 [[Stacks]] and [[Queues]] are an ideal data structure to use linked lists in, since they only need fast operations on the ends.
-*** Code
+*** Implementation
 Below is an implementation of a singly-linked list. A double-linked list uses the same concepts, so it isn't included.
 
 #+begin_src python :results output
