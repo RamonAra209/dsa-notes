@@ -34,16 +34,14 @@ I'm going to be honest and say that I pretty much forgot most of it.
 These notes are meant to help me re-learn the core-concepts so that I'm not rushing at the last minute.
 Moreover, these concepts are just generally important SWE skills I need to touch up on again.
 
-
 I'm using a myriad of resources, most notably:
 - Cracking the Coding Interview
 - Grokking's Algorithms
 - [[https://www.interviewcake.com/data-structures-reference][Data Structures Reference]] 
-
-* TODO Big O Notation
+* TODO Big O Notation 
 ** TODO Time Complexity
 ** TODO Spatial Complexity
-* Data Structures
+* TODO Data Structures
 ** TODO Arrays (Static/Dynamic)
 |        | Static Worst Case | Dynamic Worst Case |
 |--------+-------------------+--------------------|
@@ -200,14 +198,14 @@ Below is an implementation of a singly-linked list. A double-linked list uses th
       print("Len of singly linked list:", singly_linked_list.__len__())
 #+end_src
 
-#+RESULTS:
-: Appending 1 and 3 to empty linked list: 1 3 
-: Prepending 0 to existing linked list: 0 1 3 
-: Len of singly linked list: 3
-: Inserting val=2 to second 'idx': 0 1 2 3 
-: Len of singly linked list: 4
-: Deleting 1 from linked list: 0 2 3 
-: Len of singly linked list: 3
+Results:
+- Appending 1 and 3 to empty linked list: ~1 3~
+- Prepending 0 to existing linked list: ~0 1 3~
+- Len of singly linked list: ~3~
+- Inserting val=2 to second 'idx': ~0 1 2 3~
+- Len of singly linked list: ~4~
+- Deleting 1 from linked list: ~0 2 3~
+- Len of singly linked list: ~3~
 
 ** TODO Stacks
 ** TODO Queues
