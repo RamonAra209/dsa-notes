@@ -1,4 +1,32 @@
 #+TITLE: My notes on Data Structures and Algorithms
+* Table of Contents                                                   :toc_3:
+- [[#background][Background]]
+- [[#big-o-notation][Big O Notation]]
+  - [[#time-complexity][Time Complexity]]
+  - [[#spatial-complexity][Spatial Complexity]]
+- [[#data-structures][Data Structures]]
+  - [[#arrays-staticdynamic][Arrays (Static/Dynamic)]]
+    - [[#strengths][Strengths]]
+    - [[#weaknesses][Weaknesses]]
+    - [[#implementation][Implementation]]
+  - [[#linked-lists-single-vs-double][Linked Lists (Single vs Double)]]
+    - [[#strengths-1][Strengths]]
+    - [[#weaknesses-1][Weaknesses]]
+    - [[#uses][Uses:]]
+    - [[#code][Code]]
+  - [[#stacks][Stacks]]
+  - [[#queues][Queues]]
+  - [[#trees][Trees]]
+  - [[#graphs][Graphs]]
+- [[#algorithms][Algorithms]]
+  - [[#searching][Searching]]
+  - [[#sorting][Sorting]]
+  - [[#hashing][Hashing]]
+  - [[#greedy][Greedy]]
+  - [[#recursion][Recursion]]
+  - [[#backtracking][Backtracking]]
+  - [[#dynamic-programming][Dynamic Programming]]
+  - [[#advanced-algorithms][Advanced Algorithms]]
 
 * Background
 As a 3rd year student who took Data Structures and Algorithms his second year,
