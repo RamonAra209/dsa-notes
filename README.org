@@ -34,6 +34,12 @@ I'm going to be honest and say that I pretty much forgot most of it.
 These notes are meant to help me re-learn the core-concepts so that I'm not rushing at the last minute.
 Moreover, these concepts are just generally important SWE skills I need to touch up on again.
 
+
+I'm using a myriad of resources, most notably:
+- Cracking the Coding Interview
+- Grokking's Algorithms
+- [[https://www.interviewcake.com/data-structures-reference][Data Structures Reference]] 
+
 * TODO Big O Notation
 ** TODO Time Complexity
 ** TODO Spatial Complexity
