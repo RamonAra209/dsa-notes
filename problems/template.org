@@ -1,0 +1,29 @@
+* Problem
+[Problem here]
+
+Example 1: 
+#+begin_src 
+  [Expected input output here]
+#+end_src
+
+* Solution
+#+begin_src python :results output
+  class Solution:
+      pass
+#+end_src
+
+* Thought Process
+** Why did I choose this particular implementation?
+** What is the time/space complexity of my solution? How do I know?
+** How do better solutions differ from my own?
+** What mistakes did I make?
+** What can I do next time to make sure I don't make the same mistakes again?
+
+* Other Solution 1
+#+begin_src python :results output
+  class Solution:
+      pass
+#+end_src
+** Explanation (in my words)
+*** How does their solution work?
+*** What is the space/time complexity of their solution?

@@ -1,0 +1,45 @@
+* Problem
+Given an array of integers ~nums~ and an integer ~target~, return /indices/ of the two numbers such that they add up to ~target~.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+Example 1: 
+#+begin_src 
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+#+end_src
+
+* Solution
+#+begin_src python :results output
+  class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        idx = dict() # {key: index}
+        for i, val in enumerate(nums):
+            if not idx.get(val, None):
+                idx[val] = i
+
+        for i, val in enumerate(nums):
+            temp_key = target - val
+            dict_idx = idx.get(temp_key, None)
+            if dict_idx and temp_key + val == target and dict_idx != i:
+                return [dict_idx, i]
+#+end_src
+
+* Thought Process
+** Why did I choose this particular implementation?
+** What is the time/space complexity of my solution? How do I know?
+** How do better solutions differ from my own?
+** What mistakes did I make?
+** What can I do next time to make sure I don't make the same mistakes again?
+
+* Other Solution 1
+Insert other solution here
+#+begin_src python :results output
+  
+#+end_src
+** Explanation (in my words)
+*** How does their solution work?
+*** What is the space/time complexity of their solution?

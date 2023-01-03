@@ -9,6 +9,7 @@
     - [[#strengths][Strengths]]
     - [[#weaknesses][Weaknesses]]
     - [[#implementation][Implementation]]
+    - [[#problem-sets][Problem Sets]]
   - [[#linked-lists-single-vs-double][Linked Lists (Single vs Double)]]
     - [[#strengths-1][Strengths]]
     - [[#weaknesses-1][Weaknesses]]
@@ -37,7 +38,10 @@ Moreover, these concepts are just generally important SWE skills I need to touch
 I'm using a myriad of resources, most notably:
 - Cracking the Coding Interview
 - Grokking's Algorithms
-- [[https://www.interviewcake.com/data-structures-reference][Data Structures Reference]] 
+- [[https://www.interviewcake.com/data-structures-reference][Data Structures Reference]]
+- [[https://neetcode.io/roadmap][Neetcode's Roadmap (Problem Set)]]
+- [[https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions][Blind 75 (Problem Set)]]
+  
 * TODO Big O Notation 
 ** TODO Time Complexity
 ** TODO Spatial Complexity
@@ -59,6 +63,12 @@ I'm using a myriad of resources, most notably:
 - /For dynamic/: If the array currently fits in memory spaces [1..5] but you need space for 6 elements, it has to search for a new spot in memory to reallocate the array
 *** Implementation
 Python's arrays are dynamic, so its as simple as ~arr = []~.
+*** Problem Sets
+*If completed, link to org-file that shows problem + my solution(s)*
+| Title | Difficulty | Completed | Time Took    |
+|-------+------------+-----------+--------------|
+| [[https://leetcode.com/problems/two-sum/description/][2-Sum]] | Easy       | [[file:problems/Arrays and Strings/2sum.org][yes]]       | < 30 minutes |
+
 ** TODO Linked Lists (Single vs Double)
 |         | Worst Case |
 |---------+------------|
@@ -142,19 +152,17 @@ Below is an implementation of a singly-linked list. A double-linked list uses th
                   new_node.next_node = curr.next_node # sets new node next to remaining linked list, relative to current node
                   curr.next_node = new_node           # sets current nodes next node to new node (which has rest of list)
                   return
-
               idx_count += 1
               curr = curr.next_node
 
       def delete(self, val):
           prev = self.head        # Will always trail one behind
           curr = self.head.next_node  
-
           while curr:
               if curr.val == val:
-                  prev.next_node = curr.next_node
+                  prev.next_node = curr.next_node # skips over curr_node, effectively delting it
+                  # delete from memory here
                   return 
-
               prev = prev.next_node
               curr = curr.next_node
 
