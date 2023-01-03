@@ -65,9 +65,10 @@ I'm using a myriad of resources, most notably:
 Python's arrays are dynamic, so its as simple as ~arr = []~.
 *** Problem Set
 *If completed, link to org-file that shows problem + my solution(s)*
-| Title | Difficulty | Completed | Time Took    |
-|-------+------------+-----------+--------------|
-| [[https://leetcode.com/problems/two-sum/description/][2-Sum]] | Easy       | [[file:problems/Arrays_and_Strings/2sum.org][yes]]       | < 30 minutes |
+| Title          | Difficulty | Completed | Time Took    |
+|----------------+------------+-----------+--------------|
+| [[https://leetcode.com/problems/two-sum/description/][2-Sum]]          | Easy       | [[file:problems/Arrays_and_Strings/2sum.org][yes]]       | < 30 minutes |
+| [[https://leetcode.com/problems/group-anagrams/description/][Group Anagrams]] | Medium     | [[file:problems/Arrays_and_Strings/group_anagrams.org][yes]]       | < 10 minutes |
 
 ** TODO Linked Lists (Single vs Double)
 |         | Worst Case |

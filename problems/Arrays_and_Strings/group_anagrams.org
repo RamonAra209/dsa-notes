@@ -1,0 +1,61 @@
+* Problem
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+Example 1: 
+#+begin_src 
+  Input: strs = ["eat","tea","tan","ate","nat","bat"]
+  Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+#+end_src
+
+* My Solution
+#+begin_src python :results output
+  class Solution:
+      def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+          temp = dict()                           # Spatial complexity = n * k
+          for word in strs:                       # k-times
+              sorted_word = ''.join(sorted(word)) # timsort = n log n
+              if not temp.get(sorted_word, None):
+                  temp[sorted_word] = [word]
+              else:
+                  temp[sorted_word].append(word)
+          return [grouping for grouping in temp.values()]
+#+end_src
+
+* Thought Process
+** Why did I choose this particular implementation?
+My idea was to use a hashmap, where each key was a sorted version of the input word.
+If the did not exist, we would map that key -> value ~key (sorted_sorted) -> [word]~.
+If the key already existed in the map, we could just append it to the existing list.
+** What is the time/space complexity of my solution? How do I know?
+- Time Complexity = O(K * N log N)
+  + ~sorted()~ uses timsort = n log n
+  + We iterate through each element, ~k~
+  + Therefore, ~k * nlogn~
+- Space Complexity = O(N * K)       
+** How do better solutions differ from my own?
+- The better algorithm is a counting algorithm that results in a time complexity of ~O(NK)~
+** What mistakes did I make?
+- N/A, could be more concise, but I would argue its more readable.
+** What can I do next time to make sure I don't make the same mistakes again?
+
+- N/A
+* Other Solution 1
+#+begin_src python :results output
+  class Solution:
+      def groupAnagrams(strs):
+          ans = collections.defaultdict(list)
+          for s in strs:
+              count = [0] * 26    # Create a list of 'buckets' that represent every letter in alphabet 
+              for c in s:
+                  count[ord(c) - ord('a')] += 1 # increment bucket counter for that letter
+              ans[tuple(count)].append(s) # We can't use lists as keys, but we can use tuples
+          return ans.values()
+#+end_src
+** Explanation (in my words)
+*** How does their solution work?
+- Same premise as my solution; however, the dictionary key represents a ~count~ of each letter in the string
+*** What is the space/time complexity of their solution?
+- Time complexity = ~O(NK)~
+- Space complexity = ~O(NK)~
