@@ -9,7 +9,7 @@
     - [[#strengths][Strengths]]
     - [[#weaknesses][Weaknesses]]
     - [[#implementation][Implementation]]
-    - [[#problem-sets][Problem Sets]]
+    - [[#problem-set][Problem Set]]
   - [[#linked-lists-single-vs-double][Linked Lists (Single vs Double)]]
     - [[#strengths-1][Strengths]]
     - [[#weaknesses-1][Weaknesses]]
@@ -63,11 +63,11 @@ I'm using a myriad of resources, most notably:
 - /For dynamic/: If the array currently fits in memory spaces [1..5] but you need space for 6 elements, it has to search for a new spot in memory to reallocate the array
 *** Implementation
 Python's arrays are dynamic, so its as simple as ~arr = []~.
-*** Problem Sets
+*** Problem Set
 *If completed, link to org-file that shows problem + my solution(s)*
 | Title | Difficulty | Completed | Time Took    |
 |-------+------------+-----------+--------------|
-| [[https://leetcode.com/problems/two-sum/description/][2-Sum]] | Easy       | [[file:problems/Arrays and Strings/2sum.org][yes]]       | < 30 minutes |
+| [[https://leetcode.com/problems/two-sum/description/][2-Sum]] | Easy       | [[file:problems/Arrays_and_Strings/2sum.org][yes]]       | < 30 minutes |
 
 ** TODO Linked Lists (Single vs Double)
 |         | Worst Case |
